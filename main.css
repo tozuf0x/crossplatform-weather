@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+:root {
+--font-family: "Roberto", sans-serf;
+--link-color1: #000066;
+--link-color2: #ffffff;
+--background: #0abbfc;
+}
+
+* {
+    background-color: #00bbff;
+    margin: 1;
+    padding: 4;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+a {
+    color: var(--link-color1);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--link-color2);
+}
+
+.title {
+    font-size: x-large;
+    text-align: center;
+}
+
+.title-pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20rem;
+    height: 20rem;
+}
+
+.options-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    margin: 10;
+    padding: 5;
+}
+
+.option{
+    text-align: center;
+}
+
+.option input{
+    background-color: white;
+}
+
+.error-api{
+    display: none;
+    color: red;
+}
+
+.sidebar{
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height: 675px;
+    overflow-y: scroll; 
+}
+
+.sidebar-item {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+}
+
+.app{
+    display: flex;
+}
+
+.content{
+    width: 800px;
+}
+
+.city-manage{
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+.error-city{
+    display: none;
+    color: red;
+}
+
+.weather-pic{
+    width: 10rem;
+    height: 10rem;
+}

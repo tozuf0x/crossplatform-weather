@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Погода</title>
+        <link rel="stylesheet" href="main.css" />
+    </head>
+    <body>
+        <div class = "title">
+            <h1>Погода</h1>
+            <p>Добро пожаловать!</p>
+        </div>
+        <img
+            src = "https://cdn-icons-png.flaticon.com/512/3767/3767036.png"
+            alt= "weather picture"
+            loading="lazy"
+            class="title-pic"
+            />
+        <div class = "options-container">
+            <div class = option>
+                <h3>Как пользоваться</h3>
+                <a href="about.html">Справка</a>
+            </div>
+            <div class = option>
+                <h3>Сбросить ключ API</h3>
+                <button class="reset" id="reset">Сбросить ключ</button>
+            </div>
+            <div class="option">
+                <h3>Вернулись?</h3>
+                <input type="text" id="api-in">
+                <button class="submit" id="submit">Ввести ключ API</button>
+                <p class="error-api" id="error-api">error: API key invalid!<br>Check API key and internet connection!</p>
+            </div>
+        </div>
+        <script src="title.js"></script>
+    </body>
+</html>
